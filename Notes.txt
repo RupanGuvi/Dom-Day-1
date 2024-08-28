@@ -1,0 +1,73 @@
+Contents:
+What is DOM?
+createElement, 
+setAttribute
+getElementById, 
+querySelector vs querySelectorAll
+innerHTML vs innerText
+appendChild vs append
+
+Element = > tag + content
+attributes = > class, id , style,etc..
+
+DOM:-Document Object Model
+=> Used to create and manipulate HTML elements dynamically
+
+step 1:- creating an html element
+=>for this we will use document.createElement(HTMLTag)
+=>this is an inbuilt function which takes elementname as parameter.
+syntax:-
+var/let/const variablename = document.createElement("elementname")
+
+step 2:- adding a content
+there are two types
+1.innerHTML
+2.innerText
+
+innerHTML vs innerText
+=> there is an alternative for innerHTML
+that is innerText.
+=>both of them are used to create content.
+=>innerHTML will parse the tag inside it.
+ele.innerHTML="<p>this is p tag</p>"
+=> innerText will not parse the tag inside it.
+ele.innerText="this is p tag"
+
+syntax:- 
+variablename.innerHTML = "content"
+
+step 3:- appending the element to the body of html document
+syntax:- 
+document.body.append(variablename)
+
+
+attributes
+=> To give attributes in dom we will use
+setAttribute method which has two parameters
+1.attribute name
+2.attribute value
+
+attribute:- 
+setAttribute , getattribute
+
+classlist add
+classlist remove
+
+Get Methods:-
+tagname , classname , id 
+array ,  array  , exact element
+
+getElementById:-
+=> this method is applicable only if you have id attribute in HTML element.
+=> It return html element 
+=> if no element on id name it returns null
+getElementByClassName:-
+=> this method is applicable only if you have class attribute in HTML element.
+=> It return array.
+getElementByTagName:-
+=> this method is applicable only if you have Tag in HTML element.
+=> It return array.
+Query selector
+=> It will return only the first occurence of an html element
+Query selector All
+=> It will return all the occurence of the tag in an array.
